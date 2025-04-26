@@ -1,3 +1,12 @@
+const burger = document.querySelector('.burger')
+
+burger.addEventListener('click', function(){
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('open');
+})
+
+
+
 const questionsBoxs = Array.from(document.querySelectorAll(".questions-box"));
 
 questionsBoxs.forEach((box) => {
@@ -17,3 +26,5 @@ function boxHandler(e) {
         currentContent.style.maxHeight = 0;
     }
 }
+
+
