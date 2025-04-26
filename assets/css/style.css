@@ -264,7 +264,7 @@ body {
 }
 .investor-info-cards {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -393,10 +393,8 @@ body {
   background-color: var(--bg-color-nephritis) !important;
 }
 
-.possibilities-card-img img {
-}
 .possibilities-card {
-  width: 460px;
+  width: 450px;
   background-color: var(--bg-color-white);
 }
 
@@ -423,6 +421,44 @@ body {
   background-color: var(--bg-color-black);
 }
 
+@media (max-width: 1024px) {
+  .possibilities {
+    padding: 50px 0;
+  }
+  .possibilities-cards {
+    justify-content: space-around;
+    row-gap: 60px;
+    column-gap: 10px;
+  }
+  .possibilities-card {
+    width: 365px;
+  }
+}
+
+@media (max-width: 768px) {
+  .possibilities-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .possibilities-block h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .possibilities-block h2 {
+    font-size: 30px;
+  }
+
+  .possibilities {
+    padding: 20px 0;
+  }
+}
+
 /* Statistics  */
 
 .statistics {
@@ -436,7 +472,9 @@ body {
 }
 .statistics-cards {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 .statistics-card {
   width: 335px;
@@ -467,6 +505,12 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 425px) {
+  .statistics-block h2 {
+    font-size: 40px;
+  }
+}
+
 /* Questions */
 
 .questions {
@@ -482,8 +526,7 @@ body {
   font-size: 60px;
   font-weight: 600;
 }
-.title-nephritis {
-}
+
 .questions-boxs {
   width: 50%;
 }
@@ -523,6 +566,36 @@ body {
   overflow: hidden;
   max-height: 0;
   transition: 0.7s;
+}
+
+@media (max-width: 768px) {
+  .questions-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions-block h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .questions-boxs {
+    width: 100%;
+  }
+  .br {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .questions-block h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
 }
 
 /*  Footer  */
@@ -583,4 +656,17 @@ body {
 }
 .copyright-block1 {
   margin-right: 423px;
+}
+
+@media (max-width: 768px) {
+  .contact-block {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
 }
